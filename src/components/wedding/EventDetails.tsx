@@ -10,6 +10,7 @@ const EventDetails = () => {
       location: "Iglesia de la Santísima Trinidad",
       address: "",
       description: "Celebraremos nuestra unión ante Dios y nuestras familias.",
+      mapUrl: "https://maps.app.goo.gl/WmDzkcZkWeMvAcLr9?g_st=iw",
     },
     {
       icon: PartyPopper,
@@ -18,6 +19,7 @@ const EventDetails = () => {
       location: "Al Alma Restaurante",
       address: "",
       description: "Una noche de celebración, música y alegría.",
+      mapUrl: "https://maps.app.goo.gl/S5UY6nSk585vUAKz7?g_st=iw",
     },
   ];
 
@@ -76,7 +78,9 @@ const EventDetails = () => {
               </p>
 
               <a
-                href="#"
+                href={event.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block mt-6 px-6 py-2 border border-primary text-primary font-body text-xs tracking-widest uppercase rounded-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
                 Ver Mapa
