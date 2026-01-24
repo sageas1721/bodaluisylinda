@@ -18,7 +18,7 @@ const GallerySection = () => {
             Nuestra Historia
           </p>
           <h2 className="font-display text-4xl md:text-5xl text-foreground">
-            María & Carlos
+            Luis & Linda
           </h2>
         </motion.div>
 
@@ -58,9 +58,7 @@ const GallerySection = () => {
               "Donde hay amor, hay vida"
             </p>
             <p className="text-muted-foreground font-body leading-relaxed max-w-2xl mx-auto">
-              Nos conocimos hace 5 años en una tarde de primavera. Desde ese momento supimos 
-              que nuestras vidas estaban destinadas a unirse. Después de mil aventuras, 
-              risas y sueños compartidos, estamos listos para comenzar este nuevo capítulo juntos.
+              El amor tiene formas misteriosas de encontrarnos, incluso cuando estamos lejos de casa. A veces se esconde en los detalles más simples y otras, en los encuentros más inesperados.
             </p>
           </motion.div>
         </div>

@@ -9,7 +9,7 @@ interface TimeLeft {
 }
 
 const CountdownSection = () => {
-  const weddingDate = new Date("2025-06-15T16:00:00");
+  const weddingDate = new Date("2026-08-01T15:30:00");
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {

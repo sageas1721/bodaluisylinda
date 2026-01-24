@@ -6,55 +6,56 @@
 
 @layer base {
   :root {
-    --background: 40 33% 98%;
-    --foreground: 30 10% 25%;
+    /* New palette: Verde olivo, Verde salvia, Marfil, Marrón tierra, Azul grisáceo */
+    --background: 43 26% 94%; /* Marfil #F5F1E8 */
+    --foreground: 28 26% 40%; /* Marrón tierra #8A6B4F */
 
-    --card: 40 30% 97%;
-    --card-foreground: 30 10% 25%;
+    --card: 43 26% 96%;
+    --card-foreground: 28 26% 40%;
 
-    --popover: 40 33% 98%;
-    --popover-foreground: 30 10% 25%;
+    --popover: 43 26% 94%;
+    --popover-foreground: 28 26% 40%;
 
-    --primary: 38 50% 45%;
-    --primary-foreground: 40 33% 98%;
+    --primary: 80 36% 36%; /* Verde olivo #6B7D3B */
+    --primary-foreground: 43 26% 96%;
 
-    --secondary: 85 20% 75%;
-    --secondary-foreground: 85 30% 25%;
+    --secondary: 85 18% 66%; /* Verde salvia claro #A8B89A */
+    --secondary-foreground: 80 36% 25%;
 
-    --muted: 40 20% 92%;
-    --muted-foreground: 30 10% 45%;
+    --muted: 43 20% 88%;
+    --muted-foreground: 28 20% 50%;
 
-    --accent: 85 25% 65%;
-    --accent-foreground: 85 30% 20%;
+    --accent: 182 14% 49%; /* Azul grisáceo #6F8C8D */
+    --accent-foreground: 43 26% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 38 30% 85%;
-    --input: 38 30% 85%;
-    --ring: 38 50% 45%;
+    --border: 85 18% 75%;
+    --input: 85 18% 75%;
+    --ring: 80 36% 36%;
 
     --radius: 0.5rem;
 
     /* Wedding specific tokens */
-    --gold: 38 50% 55%;
-    --gold-light: 40 45% 75%;
-    --sage: 85 25% 65%;
-    --sage-dark: 85 30% 40%;
-    --cream: 40 33% 96%;
-    --cream-dark: 40 25% 90%;
-    --rose: 350 30% 75%;
-    --rose-dark: 350 25% 55%;
+    --gold: 28 26% 40%; /* Marrón tierra */
+    --gold-light: 28 20% 55%;
+    --sage: 85 18% 66%; /* Verde salvia */
+    --sage-dark: 80 36% 36%; /* Verde olivo */
+    --cream: 43 26% 94%; /* Marfil */
+    --cream-dark: 43 20% 88%;
+    --teal: 182 14% 49%; /* Azul grisáceo */
+    --teal-light: 182 14% 60%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(40 33% 98%) 0%, hsl(40 25% 94%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(38 50% 55%) 0%, hsl(40 55% 65%) 100%);
-    --gradient-sage: linear-gradient(135deg, hsl(85 25% 65%) 0%, hsl(85 30% 55%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(43 26% 94%) 0%, hsl(43 20% 88%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(28 26% 40%) 0%, hsl(28 20% 55%) 100%);
+    --gradient-sage: linear-gradient(135deg, hsl(85 18% 66%) 0%, hsl(80 36% 36%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(30 10% 25% / 0.1);
-    --shadow-card: 0 8px 30px -8px hsl(30 10% 25% / 0.12);
-    --shadow-gold: 0 4px 20px -4px hsl(38 50% 45% / 0.25);
+    --shadow-soft: 0 4px 20px -4px hsl(28 26% 40% / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(28 26% 40% / 0.12);
+    --shadow-gold: 0 4px 20px -4px hsl(80 36% 36% / 0.25);
 
     /* Typography */
     --font-display: 'Cormorant Garamond', serif;
