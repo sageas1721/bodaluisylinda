@@ -6,17 +6,17 @@ const EventDetails = () => {
     {
       icon: Church,
       title: "Ceremonia",
-      time: "4:00 PM",
-      location: "Parroquia San José",
-      address: "Av. Hidalgo 234, Centro Histórico",
+      time: "3:30 PM",
+      location: "Iglesia de la Santísima Trinidad",
+      address: "",
       description: "Celebraremos nuestra unión ante Dios y nuestras familias.",
     },
     {
       icon: PartyPopper,
       title: "Recepción",
-      time: "7:00 PM",
-      location: "Hacienda Los Olivos",
-      address: "Km 15 Carretera a Chapala",
+      time: "6:00 PM - 1:00 AM",
+      location: "Al Alma Restaurante",
+      address: "",
       description: "Una noche de celebración, música y alegría.",
     },
   ];

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import heroFloral from "@/assets/hero-floral.jpg";
 
 const HeroSection = () => {
-  const weddingDate = new Date("2025-06-15T16:00:00");
+  const weddingDate = new Date("2026-08-01T15:30:00");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -34,13 +34,13 @@ const HeroSection = () => {
           transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
         >
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-foreground mb-4">
-            María
+            Luis
           </h1>
           <div className="divider-ornament text-primary my-6">
             <span className="font-display text-3xl italic">&</span>
           </div>
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-foreground">
-            Carlos
+            Linda
           </h1>
         </motion.div>
 
@@ -51,10 +51,10 @@ const HeroSection = () => {
           className="mt-12"
         >
           <p className="font-display text-2xl md:text-3xl text-primary italic">
-            15 de Junio, 2025
+            1 de Agosto, 2026
           </p>
           <p className="text-muted-foreground font-body text-lg mt-3 tracking-wide">
-            Hacienda Los Olivos, Guadalajara
+            Iglesia de la Santísima Trinidad
           </p>
         </motion.div>
 
