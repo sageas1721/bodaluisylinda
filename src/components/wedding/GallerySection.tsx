@@ -35,7 +35,7 @@ const GallerySection = () => {
           duration: 0.8
         }} className="relative">
             <div className="aspect-square md:aspect-[4/3] overflow-hidden rounded-lg shadow-wedding">
-              <img alt="María y Carlos" className="w-full h-full object-cover" src="/lovable-uploads/5ae2bb87-8625-445d-af30-c797c6d9680a.jpg" />
+              <img alt="María y Carlos" className="w-full h-full object-cover" src="/lovable-uploads/c0515016-553d-4acf-b16c-490cfd3af3e4.jpg" />
             </div>
             
             {/* Decorative frame */}
