@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
-import { MapPin, Clock, Church, PartyPopper } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
+import churchImage from "@/assets/church-image.png";
+import restaurantImage from "@/assets/restaurant-image.png";
 
 const EventDetails = () => {
   const events = [
     {
-      icon: Church,
+      image: churchImage,
       title: "Ceremonia",
       time: "3:30 PM",
       location: "Iglesia de la Santísima Trinidad",
@@ -13,7 +15,7 @@ const EventDetails = () => {
       mapUrl: "https://maps.app.goo.gl/WmDzkcZkWeMvAcLr9?g_st=iw",
     },
     {
-      icon: PartyPopper,
+      image: restaurantImage,
       title: "Recepción",
       time: "6:00 PM - 1:00 AM",
       location: "Al Alma Restaurante",
@@ -51,8 +53,12 @@ const EventDetails = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="bg-card rounded-lg p-8 md:p-10 shadow-wedding text-center border border-border/50"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-sage/20 text-sage-dark mb-6">
-                <event.icon className="w-8 h-8" />
+              <div className="w-full h-40 mb-6 overflow-hidden rounded-lg">
+                <img 
+                  src={event.image} 
+                  alt={event.title} 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <h3 className="font-display text-3xl text-foreground mb-4">

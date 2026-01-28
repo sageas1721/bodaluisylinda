@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import heroFloral from "@/assets/hero-floral.jpg";
+import heroBackground from "@/assets/hero-background.jpeg";
 const HeroSection = () => {
   const weddingDate = new Date("2026-08-01T15:30:00");
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src={heroFloral} alt="Decoración floral" className="w-full h-full object-cover opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+        <img src={heroBackground} alt="Luis y Linda" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background/90" />
       </div>
 
       {/* Content */}

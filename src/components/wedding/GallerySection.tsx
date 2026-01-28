@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { BookOpen } from "lucide-react";
 import couplePhoto from "@/assets/couple-photo.jpg";
 const GallerySection = () => {
   return <section className="py-24 bg-cream-dark">
@@ -40,6 +41,25 @@ const GallerySection = () => {
             
             {/* Decorative frame */}
             <div className="absolute -inset-4 border border-primary/20 rounded-lg pointer-events-none" />
+          </motion.div>
+
+          {/* Book Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-center mt-8"
+          >
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-body text-sm tracking-[0.2em] uppercase rounded-sm hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <BookOpen className="w-5 h-5" />
+              Ver Nuestro Libro
+            </a>
           </motion.div>
 
           <motion.div initial={{
