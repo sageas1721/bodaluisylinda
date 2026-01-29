@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Clock } from "lucide-react";
+import { MapPin, Clock, Church, PartyPopper } from "lucide-react";
 import churchImage from "@/assets/church-image.png";
 import restaurantImage from "@/assets/restaurant-image.png";
 
@@ -7,6 +7,7 @@ const EventDetails = () => {
   const events = [
     {
       image: churchImage,
+      icon: Church,
       title: "Ceremonia",
       time: "3:30 PM",
       location: "Iglesia de la Santísima Trinidad",
@@ -16,11 +17,12 @@ const EventDetails = () => {
     },
     {
       image: restaurantImage,
+      icon: PartyPopper,
       title: "Recepción",
       time: "6:00 PM - 1:00 AM",
       location: "Al Alma Restaurante",
       address: "",
-      description: "Una noche de celebración, música y alegría.",
+      description: "Una noche de celebración, música, alegría y una cena familiar para festejar nuestra unión 🥂",
       mapUrl: "https://maps.app.goo.gl/S5UY6nSk585vUAKz7?g_st=iw",
     },
   ];
@@ -38,7 +40,7 @@ const EventDetails = () => {
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">
             Te esperamos
           </p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground">
+          <h2 className="font-elegant text-4xl md:text-6xl text-primary">
             Detalles del Evento
           </h2>
         </motion.div>
@@ -61,9 +63,12 @@ const EventDetails = () => {
                 />
               </div>
               
-              <h3 className="font-display text-3xl text-foreground mb-4">
-                {event.title}
-              </h3>
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <event.icon className="w-6 h-6 text-primary" />
+                <h3 className="font-elegant text-3xl md:text-4xl text-foreground">
+                  {event.title}
+                </h3>
+              </div>
               
               <div className="flex items-center justify-center gap-2 text-primary mb-4">
                 <Clock className="w-4 h-4" />
@@ -74,12 +79,14 @@ const EventDetails = () => {
                 {event.location}
               </p>
               
-              <div className="flex items-center justify-center gap-2 text-muted-foreground mb-6">
-                <MapPin className="w-4 h-4" />
-                <span className="font-body text-sm">{event.address}</span>
-              </div>
+              {event.address && (
+                <div className="flex items-center justify-center gap-2 text-muted-foreground mb-6">
+                  <MapPin className="w-4 h-4" />
+                  <span className="font-body text-sm">{event.address}</span>
+                </div>
+              )}
               
-              <p className="text-muted-foreground font-body text-sm leading-relaxed">
+              <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
                 {event.description}
               </p>
 
@@ -87,7 +94,7 @@ const EventDetails = () => {
                 href={event.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-6 px-6 py-2 border border-primary text-primary font-body text-xs tracking-widest uppercase rounded-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="inline-block px-6 py-2 border border-primary text-primary font-body text-xs tracking-widest uppercase rounded-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
                 Ver Mapa
               </a>
