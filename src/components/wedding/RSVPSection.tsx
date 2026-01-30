@@ -54,14 +54,16 @@ const RSVPSection = () => {
       };
 
       // Send to Google Sheets via Apps Script
-      const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzJbxnpIQpoLfPVnkDl19pigmfrv6WdvAjP76ZcSgHwqmSyidoJZcWKxwU881YDBqXC/exec';
       
-      // For now, we'll simulate the submission
-      // Replace GOOGLE_SCRIPT_URL with your actual Apps Script URL
-      console.log('Datos a enviar:', submissionData);
-      
-      // Simulated success
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(submissionData),
+      });
       
       setSubmitted(true);
       toast({
