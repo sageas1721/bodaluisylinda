@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-8 pt-8 border-t border-background/20">
-            <p className="font-body text-xs opacity-60">© 2025 Luis & Linda. Todos los derechos reservados.</p>
+            <p className="font-body text-xs opacity-60">© 2026 Luis & Linda. Todos los derechos SA</p>
           </div>
         </motion.div>
       </div>
