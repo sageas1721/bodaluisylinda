@@ -54,7 +54,7 @@ const RSVPSection = () => {
       };
 
       // Send to Google Sheets via Apps Script
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzJbxnpIQpoLfPVnkDl19pigmfrv6WdvAjP76ZcSgHwqmSyidoJZcWKxwU881YDBqXC/exec';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwpd5zVvsGlb0pYH5Abn_6hm4XrMi22DqvwhLtVs9F5OOteUM3IXrbJofvz-CzBP4kJgg/exec';
       
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
